@@ -1,0 +1,146 @@
+
+:root{
+    --main_color:#dc9107;
+    --white:white;
+    --gray: #f1f1f1;
+    --marg:10px;
+    --padd:10px;
+
+    
+}
+.nav-link,.navbar-brand{
+    color:white;
+}
+
+.links{
+    text-decoration: none;
+    color:var(--main_color);
+}
+.empty_list{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding:40px;
+    font-weight: 600;
+    font-style: italic;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+   justify-content: center;
+   
+   
+
+}
+
+
+.section_one,.section_two{
+    background-color: var(--gray);
+    padding:var(--padd);
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.section_one{
+    border-radius: 10px 0 2 10px ;
+}
+.section_two{
+    border-radius: 0 10px 10px 0 ;
+    justify-content: center;
+    border-left: 2px solid white;
+}
+.illustration_img{
+    max-width: 500px;
+}
+.title{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.btn-primary{
+    background-color: var(--main_color);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #fbb534;
+}
+#form_login{
+    padding:10px;
+}
+.send_bal{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   /* margin: var(--marg); */
+   margin: 20px;
+   
+
+}
+.send_money,.balance{
+    background-color: var(--gray);
+    margin:var(--marg);
+    padding: var(--padd);
+    border-radius: 10px;
+    width:50%;
+}
+.amount_val{
+    font-size: 50px;
+    font-weight: 700;
+}
+.transcations{
+    background-color: var(--gray);
+    margin:20px;
+    padding: var(--padd);
+    border-radius: 10px;
+}
+.trans_div{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+   max-width: 700px;
+    margin:var(--marg);
+    border-radius: 5px;
+}
+.user_profile{
+ margin-left:20px;
+}
+.username_date{
+ margin:10px;
+}
+.trans_amount{
+margin:10px ;
+}
+
+.user_profile img{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: var(--main_color);
+    padding: 30px;
+    max-height: 100%;
+    font-weight:600;
+    color:var(--white);
+
+}
+@media screen and (max-width: 710px){
+    section{
+     flex-direction: column;
+    }
+    .send_bal{
+      flex-direction: column-reverse;
+    }
+    .send_money,.balance{
+        width:100%;
+    }
+    .section_one{
+        border-radius: 10px 10px 2 2;
+    }
+    .section_two{
+        border-radius: 2 2 10px 10px ;
+    }
+}
